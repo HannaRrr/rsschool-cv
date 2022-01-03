@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("../assets/fonts/Cormorant_Garamond/CormorantGaramond-SemiBold.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.section-title {
+  letter-spacing: 1,5px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  transition: 0.3s;
+  color: saddlebrown;
+  text-decoration: none;
+}
+
+span {
+  color: chocolate;
+}
+
+a {
+  text-decoration: none;
+  color: saddlebrown;
+}
+
+a:hover {
+  color: olive;
+  text-decoration: overline;
+  cursor: pointer;
+}
+
+.nav-item a:hover {
+  color: olive;
+  text-decoration: overline;
+  cursor: pointer;
+}
+
+.nav-item a:focus {
+  font-style: italic;
+}
+
+.nav-item a:active {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+.header {
+  font-size: 20px;
+  font-weight: bold;
+  color: saddlebrown;
+  border: 1px solid wheat;
+  background-color: bisque;
+}
+
+.main {
+  border: 1px solid wheat;
+  background-color: linen;
+  color: saddlebrown;
+}
+
+.footer {
+  background-color: bisque;
+  border: 1px solid wheat;
+  color: saddlebrown;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-photo {
+  padding-top: 10px;
+  border-radius: 20%;
+  width: 230px; height: 230px;
+} 
